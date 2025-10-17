@@ -1,0 +1,271 @@
+html {
+	--font-regular: "EB Garamond", serif;
+	--font-bold: "EB Garamond Bold", serif;
+	--font-italic: "EB Garamond Italic", serif;
+
+	--title-font-size: 20pt;
+
+	--chapter-margin-top: 45pt;
+	--chapter-font-size: 20pt;
+	--chapter-line-height: 30pt;
+	--chapter-margin-bottom: 45pt;
+
+	--h3-margin-top: 12pt;
+	--h3-font-size: 13pt;
+	--h3-line-height: 15pt;
+	--h3-margin-bottom: 3pt;
+
+	--korpus-font-size: 12pt;
+	--korpus-line-height: 15pt;
+
+	/* the header, page number and footnotes in the margin*/
+	--margin-font-size: 9pt;
+	--margin-line-height: 11pt;
+
+	/* the [1] reference in the text*/
+	--footnote-font-size: 8pt;
+
+	--initial-letter-font-size: 36pt;
+	--initial-letter-line-height: 28pt;
+
+	--indent-size: 1em;
+	--page-top-margin: 1.5cm;
+	--page-bottom-margin: 2cm;
+	--page-inner-margin: 2cm;
+	--page-outer-margin: 1.5cm;
+
+	--screen-max-width: 40rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "EB Garamond";
+	src: url(EBGaramond/fonts/otf/EBGaramond-Regular.otf);
+}
+
+@font-face {
+	font-family: "EB Garamond Bold";
+	src: url(EBGaramond/fonts/otf/EBGaramond-Bold.otf);
+}
+
+@font-face {
+	font-family: "EB Garamond Italic";
+	src: url(EBGaramond/fonts/otf/EBGaramond-Italic.otf);
+}
+
+@page {
+	size: A5 portrait;
+}
+
+@page :left {
+	margin: var(--page-top-margin) var(--page-inner-margin) var(--page-bottom-margin) var(--page-outer-margin);
+
+	@top-center {
+		/*content: "TITLE";*/
+		font-size: var(--margin-font-size);
+		letter-spacing: 1pt;
+	}
+
+	@top-left {
+		content: counter(page);
+		font-size: var(--margin-font-size);
+	}
+}
+
+@page :right {
+	margin: var(--page-top-margin) var(--page-outer-margin) var(--page-bottom-margin) var(--page-inner-margin);
+
+	@top-center {
+		/*content: "SUBTITLE";*/
+		font-size: var(--margin-font-size);
+		letter-spacing: 1pt;
+	}
+
+	@top-right {
+		content: counter(page);
+		font-size: var(--margin-font-size);
+	}
+}
+
+@page no-header {
+	@top-center {
+		content: "";
+	}
+
+	@top-left {
+		content: "";
+	}
+
+	@top-right {
+		content: "";
+	}
+}
+
+body,
+pre {
+	font-family: var(--font-regular);
+	font-size: var(--korpus-font-size);
+	line-height: var(--korpus-line-height);
+	tab-size: var(--indent-size);
+}
+
+h1 {
+	font: normal var(--title-font-size) var(--font-bold);
+	text-align: center;
+	line-height: 1em;
+	padding-bottom: 1cm;
+}
+
+h2 {
+	font: normal var(--chapter-font-size) var(--font-bold);
+	text-align: center;
+	line-height: var(--chapter-line-height);
+	padding-top: var(--chapter-margin-top);
+	padding-bottom: var(--chapter-margin-bottom);
+}
+
+h3 {
+	font: normal var(--h3-font-size) var(--font-bold);
+	text-align: left;
+	line-height: var(--h3-line-height);
+	padding-top: var(--h3-margin-top);
+	padding-bottom: var(--h3-margin-bottom);
+}
+
+p {
+	text-align: justify;
+	white-space: break-spaces;
+	white-space: normal;
+}
+
+p+p {
+	text-indent: var(--indent-size);
+}
+
+div+p,
+p+div {
+	margin-top: 5mm;
+}
+
+h2+p::first-letter {
+	font-size: var(--initial-letter-font-size);
+	margin-right: 1pt;
+	line-height: var(--initial-letter-line-height);
+	float: left;
+}
+
+i {
+	font-family: var(--font-italic);
+}
+
+b,
+em {
+	font-family: var(--font-bold);
+}
+
+a.footnote {
+	position: absolute;
+	text-decoration: none;
+	font-size: var(--footnote-font-size);
+	vertical-align: super;
+	color: inherit;
+}
+
+hr {
+	border: none;
+	margin: 15pt 0;
+}
+
+.titlepage {
+	break-after: page;
+	page: no-header;
+}
+
+.blank {
+	break-after: page;
+	page: no-header;
+}
+
+.chapter {
+	break-after: page;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.mr {
+	margin-right: 5mm;
+}
+
+.ml {
+	margin-left: 5mm;
+}
+
+.mt {
+	margin-top: 5mm;
+}
+
+.mb {
+	margin-bottom: 5mm;
+}
+
+.small-caps {
+	font-variant: small-caps;
+}
+
+.screen {
+	display: none;
+	position: absolute;
+	top: 16px;
+	padding: 8px;
+	width: calc(100vw - 2rem);
+	gap: 8px;
+	justify-content: center;
+}
+
+.screen button {
+	height: 32px;
+	line-height: 32px;
+	font-size: 16px;
+	padding: 0 8px;
+	border: 1px solid #888;
+	border-radius: 16px;
+	font-family: 'EB Garamond';
+	background-color: #f0f0f0;
+}
+
+.screen button:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+@media screen {
+	body {
+		margin: 1rem;
+	}
+
+	section {
+		max-width: var(--screen-max-width);
+		margin: 5rem auto;
+	}
+
+	.screen {
+		display: flex;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	html {
+		--screen-max-width: calc(100vw - 2rem);
+	}
+}
