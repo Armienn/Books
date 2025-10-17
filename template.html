@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		@page :left {
+			@top-center {
+				content: "Title";
+			}
+		}
+
+		@page :right {
+			@top-center {
+				content: "Chapter Title";
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+	<!-- Tilføj &shy; hvor der kan brydes ord, som f.eks. mannfólksins til mann&shy;fólksins-->
+</head>
+
+<body>
+	<div class="screen">
+		<button onclick="document.documentElement.style.cssText = '--screen-max-width: calc(148mm - 35mm);'">Book width</button>
+		<button onclick="document.documentElement.style.cssText = '--screen-max-width: 40rem;'">Web width</button>
+		<button onclick="document.documentElement.style.cssText = '--screen-max-width: calc(100vw - 2rem);'">Full width</button>
+	</div>
+	<section class="titlepage">
+		<h1>Title</h1>
+		<div class="center">Author - 1891</div>
+	</section>
+	<section class="blank">
+	</section>
+
+	<section class="chapter">
+		<h2>Chapter I.</h2>
+		<p>test</p>
+	</section>
+</body>

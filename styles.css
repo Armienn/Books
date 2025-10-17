@@ -10,6 +10,10 @@ html {
 	--chapter-line-height: 30pt;
 	--chapter-margin-bottom: 45pt;
 
+	--sub-header-margin-top: 6pt;
+	--sub-header-font-size: 12pt;
+	--sub-header-margin-bottom: 6pt;
+
 	--h3-margin-top: 12pt;
 	--h3-font-size: 13pt;
 	--h3-line-height: 15pt;
@@ -137,26 +141,48 @@ h3 {
 	padding-bottom: var(--h3-margin-bottom);
 }
 
+hgroup {
+	padding-top: var(--chapter-margin-top);
+	padding-bottom: var(--chapter-margin-bottom);
+
+	h2 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	p {
+		position: relative;
+		font: normal var(--sub-header-font-size) var(--font-bold);
+		text-align: center;
+		line-height: 0;
+		bottom: var(--sub-header-margin-bottom);
+	}
+
+	h2+p {
+		top: var(--sub-header-margin-top);
+		bottom: 0;
+	}
+}
+
 p {
 	text-align: justify;
 	white-space: break-spaces;
 	white-space: normal;
 }
 
-p+p {
-	text-indent: var(--indent-size);
-}
+.chapter {
 
-div+p,
-p+div {
-	margin-top: 5mm;
-}
+	&>h2+p::first-letter,
+	hgroup+p::first-letter {
+		font-size: var(--initial-letter-font-size);
+		margin-right: 1pt;
+		line-height: var(--initial-letter-line-height);
+		float: left;
+	}
 
-h2+p::first-letter {
-	font-size: var(--initial-letter-font-size);
-	margin-right: 1pt;
-	line-height: var(--initial-letter-line-height);
-	float: left;
+	p+p {
+		text-indent: var(--indent-size);
+	}
 }
 
 i {
@@ -204,19 +230,19 @@ hr {
 }
 
 .mr {
-	margin-right: 5mm;
+	margin-right: 1em;
 }
 
 .ml {
-	margin-left: 5mm;
+	margin-left: 1em;
 }
 
 .mt {
-	margin-top: 5mm;
+	margin-top: var(--korpus-line-height);
 }
 
 .mb {
-	margin-bottom: 5mm;
+	margin-bottom: var(--korpus-line-height);
 }
 
 .small-caps {
