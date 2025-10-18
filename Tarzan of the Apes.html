@@ -6,13 +6,31 @@
 	<style>
 		@page :left {
 			@top-center {
-				content: "Tarzan of the Apes";
+				content: "TARZAN OF THE APES";
 			}
 		}
 
 		@page :right {
 			@top-center {
-				content: "Chapter Title";
+				content: "EDGAR RICE BURROUGHS";
+			}
+		}
+
+		@page chapter-1:right {
+			@top-center {
+				content: "OUT TO SEA";
+			}
+		}
+
+		@page chapter-2:right {
+			@top-center {
+				content: "THE SAVAGE HOME";
+			}
+		}
+
+		@page chapter-3:right {
+			@top-center {
+				content: "LIFE AND DEATH";
 			}
 		}
 	</style>
@@ -35,7 +53,8 @@
 	<section class="blank">
 	</section>
 
-	<section class="chapter">
+	<section class="chapter"
+		style="page: chapter-1;">
 		<hgroup>
 			<p>CHAPTER I.</p>
 			<h2>Out to Sea</h2>
@@ -620,10 +639,10 @@
 			come.”
 		</p>
 
-	</section><!--end chapter-->
+	</section>
 
-	<section class="chapter">
-
+	<section class="chapter"
+		style="page: chapter-2;">
 		<hgroup>
 			<p>CHAPTER II.</p>
 			<h2>The Savage Home</h2>
@@ -1187,9 +1206,9 @@
 			them.
 		</p>
 
-	</section><!--end chapter-->
+	</section>
 
-	<section class="chapter">
+	<section class="chapter" style="page: chapter-3;">
 
 		<h2><a id="chap03"></a>CHAPTER III.<br>
 			Life and Death</h2>

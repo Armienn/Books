@@ -195,16 +195,36 @@ em {
 }
 
 a.footnote {
-	position: absolute;
 	text-decoration: none;
 	font-size: var(--footnote-font-size);
+	line-height: 0;
 	vertical-align: super;
 	color: inherit;
 }
 
+footer {
+	margin-top: auto;
+	font-size: var(--margin-font-size);
+
+	a {
+		margin-right: 9pt;
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+footer::before {
+	content: "";
+	display: block;
+	width: 2cm;
+	height: 12pt;
+	margin-bottom: 3pt;
+	border-bottom: 1pt solid #000;
+}
+
 hr {
 	border: none;
-	margin: 15pt 0;
+	margin: 15pt 0 0;
 }
 
 .titlepage {
@@ -223,6 +243,11 @@ hr {
 
 .center {
 	text-align: center;
+}
+
+.center-box {
+	max-width: fit-content;
+	margin: 0 auto;
 }
 
 .right {
