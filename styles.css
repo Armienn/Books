@@ -3,7 +3,8 @@ html {
 	--font-bold: "EB Garamond Bold", serif;
 	--font-italic: "EB Garamond Italic", serif;
 
-	--title-font-size: 20pt;
+	--title-font-size: 24pt;
+	--title-line-height: 30pt;
 
 	--chapter-margin-top: 45pt;
 	--chapter-font-size: 20pt;
@@ -118,11 +119,16 @@ pre {
 	tab-size: var(--indent-size);
 }
 
+section {
+	break-after: page;
+}
+
 h1 {
 	font: normal var(--title-font-size) var(--font-bold);
+	line-height: var(--title-line-height);
 	text-align: center;
-	line-height: 1em;
-	padding-bottom: 1cm;
+	white-space: pre;
+	padding-bottom: 15pt;
 }
 
 h2 {
@@ -194,12 +200,15 @@ em {
 	font-family: var(--font-bold);
 }
 
-a.footnote {
+a {
 	text-decoration: none;
+	color: inherit;
+}
+
+a.footnote {
 	font-size: var(--footnote-font-size);
 	line-height: 0;
 	vertical-align: super;
-	color: inherit;
 }
 
 footer {
@@ -208,8 +217,6 @@ footer {
 
 	a {
 		margin-right: 9pt;
-		text-decoration: none;
-		color: inherit;
 	}
 }
 
@@ -228,17 +235,33 @@ hr {
 }
 
 .titlepage {
-	break-after: page;
 	page: no-header;
+}
+
+.colophon {
+	page: no-header;
+	padding-top: 150pt;
+
+	p {
+		text-align: center;
+	}
+}
+
+.dedication {
+	page: no-header;
+}
+
+.contents {
+	page: no-header;
+
+	a {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .blank {
-	break-after: page;
 	page: no-header;
-}
-
-.chapter {
-	break-after: page;
 }
 
 .center {
