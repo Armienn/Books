@@ -50,17 +50,17 @@ html {
 
 @font-face {
 	font-family: "EB Garamond";
-	src: url(EBGaramond/fonts/otf/EBGaramond-Regular.otf);
+	src: url(fonts/EBGaramond/EBGaramond-Regular.otf);
 }
 
 @font-face {
 	font-family: "EB Garamond Bold";
-	src: url(EBGaramond/fonts/otf/EBGaramond-Bold.otf);
+	src: url(fonts/EBGaramond/EBGaramond-Bold.otf);
 }
 
 @font-face {
 	font-family: "EB Garamond Italic";
-	src: url(EBGaramond/fonts/otf/EBGaramond-Italic.otf);
+	src: url(fonts/EBGaramond/EBGaramond-Italic.otf);
 }
 
 @page {
