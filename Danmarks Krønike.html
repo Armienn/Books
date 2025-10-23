@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<style>
+		@page :left {
+			@top-center {
+				content: "Danmarks Krønike";
+			}
+		}
+
+		@page :right {
+			@top-center {
+				content: "Chapter Title";
+			}
+		}
+	</style>
+	<link rel="stylesheet"
+		href="styles.css">
+	<script src="script.js"></script>
+	<!-- Tilføj &shy; hvor der kan brydes ord, som f.eks. mannfólksins til mann&shy;fólksins-->
+</head>
+
+<body>
+	<div class="screen">
+		<button onclick="document.documentElement.style.cssText = '--screen-max-width: calc(148mm - 35mm);'">Book width</button>
+		<button onclick="document.documentElement.style.cssText = '--screen-max-width: 40rem;'">Web width</button>
+		<button onclick="document.documentElement.style.cssText = '--screen-max-width: calc(100vw - 2rem);'">Full width</button>
+	</div>
+	<section class="titlepage">
+		<h1>Danmarks Krønike</h1>
+		<div class="center">Saxo Grammaticus - ca. 1200</div>
+		<div class="center"><i>På dansk ved</i></div>
+		<div class="center">Nikolai Frederik Severin Grundtvig - 1818</div>
+	</section>
+	<section class="blank">
+	</section>
+	<section class="dedication">
+		<pre class="center-box"
+			class="center-box">Det siger Beda, den ærlige Mand,
+Det er vel-gjort, af hvem der kan,
+At skrive Forældres Gierninger alle;
+Ere de onde, man maa dem flye,
+Ere de gode, dem giøre paa Nye,
+Og dem ingenlunde frafalde!</pre>
+		<div>Riim-Krøniken.</div>
+	</section>
+	<section class="blank">
+	</section>
+
+	<section class="chapter">
+		<h2>Saxos Fortale til Dannemarks Krønike.</h2>
+		<p>
+			Eftersom andre Folkefærd giøre sig en Ære af deres gamle Bedrifter, og sætte en Glæde i at komme Forfædrene ihu, saa kunde den danske Erkebisp Absalon ikke taale, at vort Fæderneland, som det alle Dage var hans inderlige Hjertens-Lyst
+			at ophøie, skulde fattes en saadan Navnkundighed og ærligt Eftermæle; og da ingen Andre vilde giøre sig den Umage at skrive en Danmarks-Krønike, saa nødte han mig, sin ringeste Tjener, det Arbeide paa; og lod mig arme Mand hverken
+			have Rist eller Roe, førend jeg tog mig for, hvad der dog gik over mine Kræfter!
+		</p>
+		<p>
+			Sagen er den, at i Førstningen, efterat Christendommen var kommet herind, da var man kun tynd baade i Troen og i Latinen, og skulde nok bare sig for at skrive en Danmarks-Krønike, og siden, da Kirke-Tjenesten kom i Gang, og man lærde
+			Latin, saa var man doven, som man før var dum, og Følgen blev den samme, thi hvad man før ikke kunde, det gad man ikke nu. See, derfor kunde jeg ikke bære det over mit Hjerte og Sind at være gienstridig, uagtet jeg følde hvor lidt jeg
+			var saa svært et Arbeide voxen, men vilde dog hellere saagodt som sprænge mig selv, end at vi danske Folk, hvis Naboer just har deres store Moerskab af Krøniken, skulde blive berygtede som de, der agtede de gamle Dage intet skriftligt
+			Mindes-Mærke værd, men skrev dem kun i Glemme-Bogen. Det var da altsaa en tvungen Sag, at jeg belæssede mine svage Skuldre med en Byrde, som ingen Skribenter hidtildags har rørt med en Finger, jeg turde ikke stampe imod Brodden, og
+			ihvorvel det ogsaa var et Vove-Stykke at begynde paa, hvad der skulde anderledes Karle til, saa trøstede jeg mig dog ved det Rygstød jeg havde i den store Mand, hvis Herrebud jeg efter fattig Leilighed udrettede. Men da nu han gik ind
+			i Evigheden, førend jeg blev færdig, og I, Herr Anders, blev i en god Time eenstemmig udvalgt til hans Eftermand i den høie Værdighed, saa veed jeg Intet bedre, end at bønfalde Eder om at staae mit Værk i Faders og Formynders Sted,
+			saa de avindsyge Hegle-Hoveder, hvis Fingre fornemmelig kløe efter hvad som giør Opsigt, maae blive beskiæmmede, naar de see, under Hvis mægtige Vinger min Bog finder Skyts! Hvilken frugtbar Overflødighed af Viisdom og Kundskab finder
+			man ikke hos Eder, alt som et helligt Skatkammer, rigelig opfyldt med himmelske Klenodier! For at sanke saadanne Midler, og forfremmes i boglig Kunst, var det, at I bereiste Frankerig, Italien og Engelland, og da I, efter lang
+			Omvanken, fik det glimrende Kald at staae i Spidsen for en udenlandsk Høiskole, skal man have ondt ved at sige, om derved timedes Eder eller Embedet selv den største Ære. For denne Eders store Berømmelses, Dyds og Dygtigheds Skyld
+			udvalgdes I af Kongen til Haand-Skriver, og vidste saaledes at nytte Leiligheden til store Foranstaltninger, at denne Bestilling, der hidindtil ikke var synderlig regnet, siden, da I befordredes til det Embede I nu beklæder, var en
+			Brud, hvortil der beiledes omkap af de Ypperste i Landet. Intet Under derfor, at Skaane jublede over, denne Gang at have laant en Biskop af et andet Landskab, isteden for at kaare ham blandt sine egne Sønner, thi det er ikke meer end
+			billigt, at man fryder sig over et Valg, man har saa megen Ære af. Ja, da I ikke blot, ved Byrd og boglig Kunst, og Sindets Gaver, er en Prydelse for Kirken, men leder ogsaa Hjorden til Ordets fedeste Græsgange, saa er det Eders Løn
+			at elskes overalt, og Eders Roes at have, ved priselig Idræt, gjort Eders hæderfulde Embede end mere høiærværdigt! For ikke ved Eders Rigdom at give Anstød, har I med from Gavmildhed skiænket Eders store Formue til gudelig Brug, og
+			langtfra at falde i Gierrigheds Snarer, har I da meget mere paa den allerbedste Maade skilt Eder ved Rigdoms Bekymringer. Hertil kommer det kostelige Værk, hvori hellig Sandhed med synderlig Kunst er af Eder indvirket, samt den
+			Nidkiærhed, hvormed I, uanseet Uleilighederne som deraf flyde for Eder selv, tager Eders Embed vare: I har saaledes ved den saliggiørende Lærdoms Kraft tvunget dem som forholdt Kirken sine Rettigheder, til igien at opfylde deres
+			Skyldighed, og bøde nu for hvad de brøde før; dem som elskede Letfærdighed og fulgde Kiødets Lyster, har I ved idelig Formaning, og en ærbar, lysende Vandel, ført tilbage fra den usle Blødhed til en værdigere Tænkemaade, og skiøndt
+			man ikke let kan sige, om I har udrettet mest med Ord eller med Exempel, saa er det dog lige vist, at hvad Eders Formænd omsonst arbeidede paa, har I, og det ene ved kloge Raad, udrettet.
+		</p>
+		<p>
+			Nu skal man lægge vel Mærke til, at de gamle Danske, som lode det ikke feile paa store Manddoms-Gierninger, stræbde ogsaa at kappes med Romerne i udødelig Ære, saa de ikke alene efterlignede deres Skrivemaade, og satte Fortællinger om
+			deres egen Mandhaftighed, med en egen Slags Digte-Kunst, ret artig i Stiil; men kom ogsaa Forfædrenes Bedrifter ihu, og lode Rimene derom, som gik fra Mund til Mund paa Moders-Maalet, med Rune-Bogstaver indhugge i Klipper og
+			Kampesteen. Med disse Tegn og nogle gamle Bøger for Øie, har jeg i Oversættelsen troelig stræbt at følge Traaden, og sætte paa Vers hvad rimet var, saa man maa vide, at jeg har havt Noget at bygge paa, og sat Fortællingen sammen, ikke
+			efter mit eget Hoved, men efter Fædrenes Mund; thi jeg har ikke lovet at digte et rimeligt Eventyr, men troelig at berette gamle Ting! O! hvilke dyrebare Krøniker skulde ikke Folk med saadant et Hjertelag have efterladt os, om de
+			havde været Latinen mægtige, og desformedelst kunnet styre deres Skrivelyst, aldenstund vi see, at nu, da Roms Tungemaal var dem ubekiendt, havde de dog en saadan brændende Begiærlighed efter at frelse fra Glemsel hver mærkelig
+			Gierning, at de, saa at sige, gjorde Kampe-Stene til Pergament, og Klippe-Vægge til Tavler!
+		</p>
+		<p>
+			Her maa jeg imidlertid dog ingenlunde forbigaae Islændernes Fortjeneste, thi disse Folk, hvis golde Fødeland ei frister dem til nogen Overdaadighed, de holde, saa at sige, Faste Aaret om, og anvende gierne alle deres Leve-Dage paa at
+			samle og udbrede Kundskab om andre Folkefærds Vilkaar, og bøde saa med Kunst paa deres Savn; thi det er deres Fryd og Gammen at vide og fortælle alle Folkefærds Bedrifter, og de holde for, at man har ikke mindre Ære af at beskrive,
+			end af at udføre mægtige Gierninger. Deres Samlinger, rige paa kostelige Sandsagn om Fortids Handel, har jeg derfor med Flid benyttet, og mangen en Fortælling i denne Bog er deraf laant og oversat, thi deres Hjemmel, hvis store
+			Kyndighed i Oldsager er mig noksom bekiendt, tør jeg ikke forsmaae. For Resten har det været mig en Samvittigheds-Sag, nøie at nemme, flittig at optegne, og troelig at følge hvad Absalon, det være sig om hans egne eller Andres
+			Bedrifter, vidste at fortælle, thi hvert hans Ord om Sligt var mig som himmelfaldet.
+		</p>
+		<p>
+			Nu vender jeg mig til Eder, Kong Valdemar! Dannemænds livsalige Fader og Fyrste, Fædernelandets glimrende Prydelse, hvis berømmelige Herkomst og ældgamle Stamme skulde findes her beskrevet! Høilig trænger dette mit Arbeide, som vel
+			kun er lykkedes maadelig, til Eders Gunst, thi i det jeg, som en Steen paa Hjertet, føler Byrdens Vægt, maa jeg vel frygte for, at det er snarere min egen Vankundighed og Afmagt jeg blotter, end Eders Herkomst jeg sømmelig aabenbarer!
+			Eders, maa jeg vel sige, thi Eders store Arvelande har jo I, paa Naboernes Bekostning, anseelig formeret, og der I udstrakde Eders Spiir saavidt, at Elben nu strømmer i Danmarks Rige, da er det ingen ringe Forøgelse af Kronens Glands,
+			som I vandt Æren for; thi vidt overgik I de fremfarne Kongers Roes og Rye, ved selv mod det Romerske Rige at vende Eders seierrige Vaaben! Dog, hos Eder rækker Mod og Mildhed jo hinanden Haand, saa det er et Spørgsmaal, om ikke dog
+			Eders Livsalighed giør Eder endnu mere elsket hos Eders Folk, end Eders Vaaben giør Eder udenlands frygtet; ei heller maa det glemmes, at Eders Far-Fader, som skrinlagt straaler nu i Helgen-Skaren, vandt ved sin uskyldige Død udødelig
+			Ære, og at hans Helgen-Glands behersker nu de Folk, hans Sværd betvang, saa man maa sige, at af Helgen-Saaret udstrømmede dog mere Kraft end Blod! Og endelig, saa er jeg nu engang af Moders Liv og Fæderne-Herkomst Eders skyldige
+			Tjener, thi, som vitterligt er, tjende baade min Fader og Farfader, den synderlig trofaste Mand, i Eders Herr Faders Gaard, og kæmpede mandelig under hans Banner, og sagtens maa da jeg, i det Ringeste i Aanden, kæmpe under Eders!
+			Under det, og under Eders Skjold tillige, vil jeg da gaae frem, og for at komme ret paa Glid, vil jeg begynde med en Beskrivelse over Fædernelandet, efter dets Beliggenhed, da Alt vil falde desbedre i Traad, naar Fortællingen, som
+			under sit Løb skal sætte hver Ting paa sit Sted, har begyndt med Stedernes Beskrivelse.
+		</p>
+		<p>
+			Danmarks Riges Beliggenhed er da denne, at deels grændser det ved en Ende til fremmede Lande, og deels er det omflydt af det bølgende Hav, saa at de indvendige Dele omsnoes og overskiæres af Stranden, og den krydser sig paa mange
+			Maader, ud og ind, snart i smalle Sunde, og snart i brede Bugter, hvorved der dannes en stor Hob Øer. Heraf kan man da begribe, at Dannemark, som Bølgerne, saa at sige, har slaaet i Stykker, har kun faa landfaste Dele, og at Havet,
+			som i sit Løb slaaer de mange Bugter, skiller dem vidt fra hinanden. Af disse landfaste Dele er nu igien Jylland baade den største, og naar vi komme sønderfra, den næste, saa den vel maa kaldes Broder-Parten af Riget, thi den strækker
+			sig saa langt sønderpaa, at den berører Tydskland, men rives dog igien løs derfra ved Eider-Strømmen, og løber saa lidt bredere, sønderfra, lige op til det Norske Sund. I dette Landskab er den saakaldte Lim-Fjord, hvor der saaledes
+			vrimler af Fisk, at Folket der i Egnen nok alle Dage haver ligesaameget sin Næring af Fjorden som af Jorden.
+		</p>
+		<p>
+			Til Jylland grændser Lille-Frisland, og her gaaer Landet ned ad Bakke, saa Jords-Monnet bliver meget lavere, men Landet ogsaa meget mere frugtbart, som det kan takke Stranden for, der oversvømmer det. Det er imidlertid et stort
+			Spørgsmaal, om man ikke her kiøber Guld for dyrt, thi det er en farlig Sag med den Strand; naar det falder ind med stærk Storm, bryder den ikke sjelden igiennem Digerne, som man ellers dæmmer for den med, og styrter da gierne saa
+			rasende ind, at den mangengang tager med sig, ikke blot hvad der staaer og groer paa Marken, men selv Husene med Folk og Samt.
+		</p>
+		<p>
+			Østenfor Jylland, ligger Øen Fyen, som kun ved det smalle Medelfarsund er skilt fra Fastlandet, og ligesom Fyen nu har Jylland vestenfor sig, saaledes vender den østlig imod Sælland, en Øe, som bær Prisen for alle Dannemarks
+			Landskaber, baade i Overflod paa Livets Nødvendigheder og i sin] GV, siu A Deilighed. Den skal, efter Sigende, ogsaa ligge lige midt i Dannemark, saa der fra den er lige langt til Grændserne paa alle Sider.
+		</p>
+		<p>
+			Østen for Sælland bryder Havet atter igiennem, og skiller Øen fra Skaane ved et Sund, hvor Fiskerne pleie hvert Aar, uden Undtagelse, at giøre en ganske overordenlig Fangst, ja Fiskene flokkes saa tykt i hele det Sund, at det kan
+			træffe sig den Gang, man har ondt ved at roe derigiennem, og behøver hverken Garn eller Krog, men kan øse Fiskene op med de bare Hænder.
+		</p>
+		<p>
+			Skaane ligger ud i een Strækning, men Halland og Bleking skyde ud derfra, hver til sin Side, ligesom man kan see to Grene paa et Træ, og slynge sig vidt fra hinanden, den ene til Norge, og den anden til Gylland. Ved Bleking er der
+			ellers en stor Mærkværdighed, en Klippe nemlig med en Vei over, der er ligesom bestrøet med underlige Tegn og Bogstaver. Der løber nemlig en Fjeldstie ligefra den søndre Kyst ind i Verende-Vildmark, og langs ned med begge Sider, et
+			lille Stykke fra hinanden, gaae der to Render, og den jævne Plads der midt imellem er overalt ligesom besaaet med Tegn, der aabenbar skal være en Slags Skrift, thi uagtet Stien gaaer bestandig op og ned, snart høit paa Fjeld, snart
+			dybt i Dal, saa kan man dog tydelig spore, at Bogstaverne gaae bestandig ud i en Række. Dette syndes Kong Valdemar, Hellig-Knuds velsignede Søn, var en underlig Ting, og fik Lyst til at vide Udtydningen derpaa, hvorover han udskikkede
+			sine viise Bud, som skulde bereise den Klippe, see vel til, at de kunde opspore alle de Tegn der var, og skiære dem ud i Stokke som de stod, til Punkt og Prikke; men de kunde ingen Mening faae ud af det Hele, fordi Ridserne vare
+			udslidte, deels af Vandløb og deels af Fodtraadd, saa Stregerne løb i hinanden, og forvildede Læseren. Heraf seer man, at selv hvad man indgraver i Stenen saa fast, kan dog i Tidens Længde af Vandløb og Regnskyl udslettes.
+		</p>
+		<p>
+			Det var nu om Dannemark, men eftersom dette Rige, baade ved sin Beliggenhed og Folkets Tungemaal, er, saa at sige, besvogret med Sverrig og Norge, saa vil jeg med det Samme tale et Par Ord om deres Vilkaar og Leilighed.
+		</p>
+		<p>
+			Disse Lande ligge da op imod Nordpolen, under Nordstjernen og Karlsvognen, og strække sig længst mod Norden lige ind i Sneekredsen, saa høiere oppe kan Ingen boe eller bjerge sig, for den ulidelige Frost og Kulde, som raser i de
+			Landemærker. Norge har desforuden, som Naturens Stifbarn, et grumt og sørgeligt Udseende, med de uhyre Steen-Blokke, bratte Klipper og nøgne Fjelde, hvoraf det er omringet, men det er mærkværdigt, at øverst oppe i det Land gaaer Solen
+			sommetider slet ikke ned, saa man kan sige, den er der for stolt til at hænge i Klokke-Strængen, og vil vise, at den kan holde ud at skinne baade Dag og Nat.
+		</p>
+		<p>
+			Vesterud fra Norge, midt i det vilde Hav, ligger der en Øe, ved Navn Island, hvor man knap skulde vente at finde Folk, men som er ret et Vidunder, efter de sære og utrolige Ting at regne, man veed om den at fortælle. Der skal saaledes
+			være en Kilde med et rygende Vand, som er i Stand til ligesom at forgiøre hvad det skal være, saa at hvad der befugtes med Dampen af det Vand, bliver saa haardt som en Steen. Det er da ikke at spøge med, og ihvorvel det falder
+			utroeligt, at der kan sidde saadan en Stivelse paa Luur i det bløde, rindende Vand, saa er det dog ikke værd at forsøge, thi hvad der kommer i Dampen, kan vel beholde sit Udseende, men bliver dog, som sagt, i Grunden forstenet. Der
+			skal ogsaa være nogle andre Kilder, som har den Særhed ved sig, at snart bugne de ganske umaadelig, og sprøite høit op i Veiret, ligesom man kan see et Springvand, og saa falde de igien lige saa umaadelig, og synke reent ned i Jorden;
+			snart kan man ikke komme dem nær, uden at over-sprøites af det hvide Skum, og snart kan man see sig blind, før man finder dem. Paa samme Øe ligger ogsaa Bjerget Hekkenfeld, der har samme Vane som Ætna, og helmer aldrig med at syde og
+			brænde i sit Inderste, og spye og sprude Ild og røde Luer ud af sig. Det holder jeg for et stort Vidunder, thi hvem skulde tænke, at et Bjerg, der ligger i Snee og Iis, skulde endda kunne have det saa hedt, og aldrig kunne faae Has
+			paa sin Ild.
+		</p>
+		<p>
+			Det er ogsaa underligt med den utrolige Mængde Driviis, som til sine visse Tider hjemsøger Landet, thi naar den første Gang støder dundrende paa Klipperne, da er det som om de svarde med hule Drøn, thi da hører man, fra Dybet af, et
+			underligt Brag og ligesom klynkende Stemmer, hvorfor man i gamle Dage har bildt sig ind, at det var onde Menneskers Sjæle, som her i den ulidelige Kulde fik deres Straf. Men, hvad der tilgavns maa forundre og forbause, er hvad man
+			fortæller, at om man ogsaa hugger et Stykke af den Iis, og tøirer det nok saa fast, kan man dog ikke forhindre det fra at følge med, naar det Øvrige bryder op, saa det maa have en ganske besynderlig Sammenhæng med den Iis, som
+			ingenlunde vil skilles ad, og lader sig ikke det Mindste afkorte, af hvad der, saa at sige, hører til dens Legeme. Der er ogsaa en anden Slags Iis inde i Landet paa Klipper og Bjerge, som man siger for vist, skal alt imellem kaste
+			sig, saa der vendes op og ned paa hele Skruen, og som et Beviis derpaa fortæller man, at nogle Skieløbere styrtede engang ned i et Gab paa Isen, og bleve kort efter fundne døde ovenpaa Isen, uden at der var den mindste Sprække at see,
+			thi heraf vilde man slutte, at Isen maatte have vendt sig. Efter hvad Rygtet siger, skal her ogsaa være en Kilde, som man kun behøver at smage Vandet af, for at drikke Døden i sig lige paa Timen, som om man drak den dødeligste
+			Forgift; ligeledes nogle andre Kilder, hvori Vandet har Smag efter Øl; fremdeles en Slags Ild, der skyer Hør, og brænder Vand, og endelig en Steen, der uden at Noget rører ved den, ligesom af sig selv, dreier sig om Bjerg-Toppene.
+		</p>
+		<p>
+			Dog, for nu at komme til Norge igien, som vi maa betragte lidt nøiere, da skal man vide, at det støder mod Østen til Sverrig og Gylland, men ligger mod Syden og Vesten ud til det vilde Hav, og i Norden vender det imod et Land, som
+			Ingen veed Navn eller Grændser paa, thi det er ikke et Land med ordenlige Mennesker, men er fuldt af et eget besynderlig Slags Utydsker, og det er skilt fra Norge ved en stor Havbugt, hvor der er en vanskelig Seilads, saa de ere gode
+			at tælle, som kom igien med holden Reise.
+		</p>
+		<p>
+			Havets Løb er nemlig saa, at til Høire overskiærer det Dannemark, og slaaer en Bugt sønden om Gylland; til Venstre derimod, gaaer det op norden om Norge, bredt østerind, og ender sig i en Krumning, som vore Forfædre kaldte Gandvig.
+			Imellem denne Gandvig, og Bugten sønderfra, er der kun et kort Stykke Vei, og var det Skillerum ikke blevet af Naturen sat op, som et Bolværk imod Bølgerne paa begge Sider, da havde de gjort Sverrig og Norge til en Heel-Øe. I disse
+			nordostlige Egne boe Skridt-Finnerne, et Folk, som er udlært paa at bruge et eget Slags Skøiter, og paa dem kan disse Vild-Skytter vinde op ad de steileste Klipper. Intet Bjerg stikker saa høit i Sky, at de jo med Tid og Leilighed kan
+			naae til Toppen, thi de veed at bære sig ganske listig ad, løbe fra neden af immer paa Skraa, og krydse sig immer i Bugter og Sving, og Snegle-Gange, lidt efter lidt fra Fod til Top. Dyre-Skind er Alt hvad de har at sælge, og dem
+			kiøbe Nabo-Folkene af dem.
+		</p>
+		<p>
+			Hvad nu endelig Sverrig angaaer, da støder det mod Vesten til Dannemark og Norge, mod Sønden, og for en stor Deel mod Østen, til Havet, men grændser dog ogsaa østlig til et Land, med mange og det heel forskiellige barbariske Folk.
+		</p>
+		<p>
+			I gamle Dage maa Dannemark være blevet bebygget og opdyrket af et Slags Jetter, thi det kan man see paa de uhyre store Stene over Grav-Kjelderne og Jette-Stuerne, og vil Nogen tænke, at de kunde komme derop, uden ved uhyre Kræfter, da
+			betragte han kun bare somme af vore Bankers Høide, og see saa, om han kan sige os, hvem der vel ellers skulde sat de Steenblokke paa Toppen; thi hvem der vil bruge sin Eftertanke, kan jo dog begribe, at den Steen man ikke kan løfte,
+			maa man lade ligge, og kan da Folk, som de falde nutildags, med de Kræfter og Redskaber de har, enten slet ikke, eller dog knap nok vælte saadan en Steen paa jævn Jord, saa lode de vel være at trille den op ad de høie Bakker. Uvist er
+			det derimod, om de Jetter, som endnu efter Syndfloden fandtes paa Jorden, har været Mestere for det Stykke Arbeide, eller det forskriver sig fra andre Folk med særdeles Legems-Kræfter; hos os har man giættet paa de Folk, som endnu
+			skal beboe den utilgiængelige, stenede Udørk, som vi talte om før, thi deres Legemer skal være et Slags Vende-Kaaber, saa de kan giøre sig synlige og usynlige, smaa og store, efter Behag; men det er da, som sagt, et Land der ikke er
+			at løbe til, og hvor ikke mangen skal rose sig af at have været, og være kommet heelskindet hjem.
+		</p>
+		<p>
+			Dette maa da være nok herom, og nu kommer jeg til hvad jeg egenlig vilde fortælle.
+		</p>
+	</section>
+
+	<section>
+		<hgroup>
+			<p>Folke-Sagn fra Hedenskabet.</p>
+			<h1>Første Bog</h1>
+			<p>Fra Dans Opkomst til Haddings Død.</p>
+		</hgroup>
+	</section>
+
+	<section class="chapter">
+		<h2>Dan og Angel.</h2>
+		<p>
+			Dannemarks Krønike begynder med Humbles Sønner: Dan og Angel, som baade vare de første navnkundige Høvdinger i Riget, og bleve opkaldte i Folket; uagtet den Normanniske Historie-Skriver, Dudo, rigtig nok vil sige, at de Danske skal
+			nedstamme fra Grækerne, som ogsaa kaldes Danaer, og deraf have deres Navn. Ihvorvel nu disse Brødre, for deres Mods og mandelige Gierningers Skyld, bleve af menige Landsens Indbyggere udvalgte til Høvdinger og Fyrster, saa kaldtes de
+			dog ikke Konger, thi det Navn var dengang hertillands enten ubekiendt, eller dog ikke kommet i Brug.
+		</p>
+		<p>
+			Fra denne Angel skal, efter Sigende, det engelske Folks Navn have sin Oprindelse, thi det Landskab han raadte over, kaldte han Angeln, og slap derved paa en nem Maade til et udødeligt Navn, thi da hans Efterkommere siden indtoge
+			Britannien, skildte de tillige Øen ved sit gamle Navn, og satte deres eget Fædrenelands, nemlig Angelns, isteden, og den Heltegierning har man i gamle Dage gjort meget Væsen af. Herom kan man læse hos Beda, som var selv en
+			Engelskmand, og velberømt for sine gudelige Skrifter, thi han indlemmede med Flid sit Fædrenelands Krønike i sine dyrebare Bøger om Troen og Lærdommen, fordi han tænkde, som sandt var, at det er ligesaavel en Kiærligheds-Gierning at
+			tænde Lys i sit Fædrenelands Krønike, som at udlægge Guds Ord; det Ene skal giøres, og det Andet ikke forsømmes.
+		</p>
+		<p>
+			Det var nu Angel, men fra Dan nedstammer, efter Forfædrenes Vidnesbyrd, vort gamle Kongehuus, saa Konge-Blodet er fra ham, som et Kildespring, rundet giennem Slægten lige til den Dag i Dag. Han fik sit Giftermaal ude fra Tydskland, og
+			avlede med Grythe, sin høibaarne Fyrstinde, to Sønner: Humble og Lotter.
+		</p>
+	</section>
+
+	<section class="chapter">
+		<h2>Humble og Lotter.</h2>
+		<p>
+			Det var Skik i gamle Dage, at naar man valgde sig en Konge, da stod man paa nedgravne Stene, og gav sin Stemme, for ved de Stenes faste Leie at betegne, Valget skulde staae fast og aldrig rygges; men uagtet nu at Humble, da hans Fader
+			døde, blev udvalgt paa samme Maade, saa havde han dog det Uheld at miste, hvad Folkets Kiærlighed gav ham, og blev fra Høvding, Undersaat igien. Han blev nemlig overvundet i Strid af Lotter, og maatte, som en fangen Mand, da der ikke
+			var anden Redning, kiøbe sit Liv med sit Rige. I det han nu saaledes blev stødt fra Thronen af sin egen unaturlige Broder, fik man et nyt Beviis paa, hvor sandt det er, at Hallen er herlig, men Hytten er tryg, men siden han bar sin
+			Skiebne saa godt, at Ingen skulde sige Andet, end at Herlighedens Forliis var i hans Øine netop en Lykke, saa maa man slutte, at han, som en viis Mand, har betragtet en Konges byrdefulde Stand fra den rette Side.
+		</p>
+		<p>
+			Nu havde da Lotter faaet Spiret, men med Staalhandske var det, han tog det, og brugde det ogsaa derefter, ret som om han bildte sig ind, at det er ved Hovmod og Skalkhed en Konge befæster sin Throne, thi han maalde Folket med sin egen
+			Alen, og tænkde at de stode ham alle efter Riget, som gik ham nær i Adelsbyrd, derfor meende han, det var Dyden den, at tage Liv og Gods fra hver ypperlig Mand, og giøre Landet øde for ædle Folk. Dog, Herrer strænge, regiere ei længe,
+			og hvad der nys var Lotters Lykke, det blev nu hans Straf; thi han faldt, som han steeg, i et Oprør.
+		</p>
+	</section>
+
+	<section class="chapter">
+		<h2>Skiold og Gram.</h2>
+
+		<p>Vel i Skind men ei i Sind var Skiold en Søn af Lotter, thi ligefra sin første Ungdom af, gik han en ganske anden Vei, traadte ikke i sin Faders skammelige Fodspor, men slægtede sin herlige Olde-Fader paa, og her kan man med Rette
+			sige, at Beste-Fars Arv er Ættens Tarv. Alt i sin Ungdom blev Skiold berømt derved, at han fik Bugt med et vildt Udyr, og den forunderlige Hændelse maa man vel kalde et Forvarsel for hans følgende Helte-Bedrift. Hans Formyndere, som
+			optugtede ham kongelig, havde nemlig, engang i hans Drenge-Aar, givet ham Forlov til at følges ud med Skytterne og see paa Jagten, og da hændte det sig, at en usædvanlig stor Bjørn kom ham imøde, men uagtet han var vaabenløs, var han
+			dog ikke raadvild, men bandt Bjørnen i sit Belte, til hans Staldbrødre kom og gave den sit Livsbrød. Omtrent paa samme Tid skal han i Kreds have nedlagt adskillige særdeles tappre Kæmper, hvoriblandt to saare Navnkundige, nemlig Atle
+			og Skate, og da han gik i sit sextende Aar, var han saa stor og stærk, at man skulde have ondt ved at finde hans Mage.] GV, Mage A</p>
+
+		<p>Af Skate, som var Høvding i Allemannien, blev han budt ud, fordi de beilede begge til een Brud, som hedd Alvilde, og var saa deilig en Jomfrue som Nogen vilde see for Øine, og om hende sloges de da i Nærværelse af deres Krigshære,
+			men Skate maatte bukke, og med ham faldt Modet paa hele hans Krigshær, saa Allemannien blev Dannemark skatskyldig. Saaledes overgik da Skiold i Mod og Manddom vidt sin Alder, og vovede saadanne Kæmpe-Dyster, som man knap skulde tænkt
+			han i de Aar havde havt Mod til at see paa, saa at naar der var nogen Skam i de ømskindede Karle, der hendrev deres Manddoms-Aar, og ødelagde sig selv i Suus og Duus, da maatte de dog skamme sig, og lære af ham at beflitte sig paa en
+			Haandtering, som Dannemænd kunde egne og anstaae. Dog, det var ikke blot i Vaabengny, at Skiold havde Hjertet paa det rette Sted, thi hvor det gjaldt om Livsaligheden, stod han og i Spidsen, og vandt ved sin Giævhed igien den
+			Kiærlighed hos Folket, som hans Fader ved sine Udyder havde forspildt. Han afskaffede ubillige Love, og satte gode isteden, og al hans Digten og Tragten gik derpaa ud, hvorledes han bedst kunde hjelpe sit Rige paa Fode, thi det var
+			hans Mening, som det var hans Ord, at Kongen er sat til at sørge for Landet og glemme sig selv. I Naade og Gavmildhed, saavelsom i Mod og Manddom, gjorde han al Verdens Konger Rangen stridig, thi af sit Skatkammer betalte han sine
+			Undersaatters Gield, husvalede de Syge, og hjalp de Betrængte til Rette, og sine Kæmper gav han ikke blot Kost og Løn som den Bedste, men lod dem ogsaa i Krig beholde alt Byttet, thi han pleiede gierne at sige: Kongens er Prisen, og
+			Pengene Kæmpens!</p>
+
+		<p>Fordi nu Skiold saaledes viiste, at der var en herlig Aand i ham, saa have alle Dannemarks følgende Konger beholdt hans Navn, og ladet sig kalde Skioldunger. Imidlertid gav han dog een Forordning, som ei er at rose, thi da en af hans
+			frigivne Trælle blev overbeviist om, at staae hemmelig Kongen efter Livet, befalede han, at alle Frigivne skulde være Trælle igien, som om det var Ret, at lade dem alle bøde for den Enes Brøde!</p>
+
+		<p>Vi hørde før, at der var en deilig Jomfrue, som Skiold sloges for med Skate, hende tog han til Ægte, da han havde fældet sin Medbeiler, og af dette Ægteskab blev født en Søn, der kom til at hedde Gram, og skulde ikke lyve sig Fader
+			til, thi han var i alle Maader Skiold op ad Dage. Baade i Henseende til Sjæl og Legeme havde han og alle de Egenskaber, man helst maa ønske sig, og brugde dem saa vel, at han vandt sig udødelig Ære, ja hvor høit han stod anskrevet hos
+			Efterkommerne, seer man deraf, at i de ældste danske Viser er det som en stor Æres-Beviisning, naar en Konge kaldes Gram. Særdeles var han berømt for sin Haardførhed og store Færdighed i alle Legems-Øvelser, og han var især en
+			Fægte-Mester, som forstod sin Kunst, enten det saa kom an paa at hugge til, eller bøde af.</p>
+
+		<p>Først giftede han sig med sin Foster-Fader Roars Datter, som var hans Patte-Syster, og det kan man sige var kongelig betalt, for hvad hun havde mistet; men siden overlod han hende til Besse, en af sine tro Mænd, som havde forskyldt
+			meget Godt af ham, thi han var ham saaledes til Rygstød og Bistand i hans Kæmpe-Dyster, at det er et Spørgsmaal, om Gram havde sin egen eller Besses Tapperhed meest at takke, for al den Ære og Priis han vandt.</p>
+
+		<p>Engang hørde Gram fortælle om Gro, en svensk Prindsesse, at hendes Fader Kong Sigtryg havde lovet hende bort til en Jette, og han blev saa harmefuld over, at en Konge-Daatter skulde have saa tynd en Lykke, at han gik til Sverrig med
+			sine Kæmper, og satte sig for, som en anden Herkules, at prøve Styrke med Uhyret. Saasnart han nu kom til Gylland, klædte han sig ud, med Bukkeskind om Benene, og en stor Pels af forskiellige Dyre-Huder, for at sætte Skræk i hvem han
+			mødte, og da han nu tillige gik med en stor, svær Kiølle i Haanden, saa saae han livagtig ud, som han kunde været en Jette. I den Klædedragt mødte han i en Skov Gro selv, som kom ridende med nogle faa Terner, og vilde hen til en Søe,
+			hvor hun pleiede at gaae i Bad. Hun tænkde det var hendes Fæstemand, og paa Kvinde-Viis blev hun saa angest og bange for det fæle Syn, at hun tabde Tøilen, og skiælvede og bævede over hele sit Legeme. Alt som hun sad, sagde hun ved
+			sig selv, paa sit Maal, som der staaer i Visen:</p>
+		<pre class="center-box mt mb">Skuffer Synet mig ei,
+Kommer lang, kommer breed,
+Vist den Jette saa leed
+Nu, og mørkner min Vei.
+Dog, og stundum paa Skrømt
+Helten fiin og berømt
+Skaber ud, hyller ind
+Sig som Vildlap i Skind.
+</pre>
+		<div class="center">Besse.</div>
+		<pre class="center-box mb">Raske Møe paa Ganger let!
+Giør nu som jeg beder;
+Siig mig Sandhed om din Æt!
+Glem ei hvad du hedder!
+</pre>
+		<div class="center">Gro.</div>
+		<pre class="center-box mb">Konge er min Fader god,
+Rundet op af Kæmpe-Rod,
+Blinket har hans blanke Sværd
+Tit med Held i Herre-Færd,
+Af hans Daad gaaer vide Savn,
+Gro, det er hans Daatters Navn.
+Siig mig nu:Hvem og hveden est vel Du?
+</pre>
+		<div class="center">Besse.</div>
+		<pre class="center-box mb">Besse jeg hedder med Ære,
+Banner og Sværd kan jeg bære,
+For mig i Feldten man gruer,
+Fiender jeg smækker som Fluer,
+Sjelden fra Valen jeg flytter min Fod,
+Før jeg kan vade i Blod.
+</pre>
+		<div class="center">Gro.</div>
+		<pre class="center-box mb">Hvem mægter at styre
+Og raade de Fyre,
+Her hugge saa drøit?
+For hvem bæres Banner saa høit?
+Hvem kiende I Karle paa Land og paa Strand,
+I Leding for Herre og Høvedsmand?
+</pre>
+		<div class="center">Besse.</div>
+		<pre class="center-box mb">Med Lykken vi følge,
+Paa Land og paa Bølge,
+Den stoute Kong Gram;
+For Ingen han viger,
+Men Kæmper og Riger,
+Maa bukke for ham.
+Hvor Pilene suse,
+Hvor Bølgerne bruse,
+Hvor Hjelmene knage,
+Hvor Luerne brage,
+Der, Guld-Møe, giv Agt!
+Der gaaer uforsagt
+Den Høvding saa krye,
+Hvis Banner vi løfte i Skye.
+</pre>
+		<div class="center">Gro.</div>
+		<pre class="center-box mb">Seiler, I Svende,
+Hjem med en Fart!
+Ellers I ende
+Ynkelig snart;
+Kommer med Hær
+Sigtryg jer nær,
+Flux han jer knytter om Kværke
+Rebene stærke,
+Hænger jer op
+Høit i Top,
+Leer, naar han seer, at I smager
+Ravne og Krager.
+</pre>
+		<div class="center">Besse.</div>
+		<pre class="center-box mb">Hillemænd, hillemænd;
+Nu, et godt Ord igien!
+Gik Alt som du vilde,
+Gik os det kun ilde;
+Men ellers din Fader skal vogte sig vel,
+At hovedkulds ikke han reiser til Hel;
+Thi heller paa ham
+Den vældige Gram
+Dog Halsen vist knækker,
+Var og den af Steen,
+End her han nu lægger
+Saa bradt sine Been!
+Dannemænd aldrig for Svenskere grue,
+Om de og mylre, som Myrer i Tue!
+</pre>
+		<div class="center">Gro.</div>
+		<pre class="center-box mb">Mig huer Salen
+Bedre end Valen,
+Hjem vil jeg tye,
+Og medens Sværdene lyne,
+Være af Syne,
+Sidde paa Fædrene-Borgen i Ly.
+Eder paa brusende Bølge
+Døden forfølge,
+Om I og Sværdet undflye!
+</pre>
+		<div class="center">Besse.</div>
+		<pre class="center-box mb">Gid du med Glæde
+Gange til Sæde
+I dine Fædrene-Sale!
+Ønskerne lede
+Vi os frabede!
+Galde med Godt vi betale.
+Sjeldnere vender i Luften sig Vind,
+End som paa Tærskelen Pigernes Sind;
+Sure i Gaarden, og søde i Borgen,
+Kimse i Dag de, og kysse i Morgen.
+</pre>
+		<p>Nu var Gram kied af at staae og tie, og gav sig i Snak med Jomfruen, men tog Tonen saa grovt som han kunde, saa man kan snarere sige han brølede, end at han snakkede.</p>
+
+		<div class="center mt">Gram.</div>
+		<pre class="center-box mb">Vær hun kun slet ikke bange, mit Barn!
+Og tænk ikke, jeg er et Skarn!
+Jetten, min Broder, ved mig sender Bud
+Til sin tilkommende deilige Brud,
+Men vil hun ha'e mig, er det Hip som Hap,
+Min Broder hedder Grip, og jeg hedder Grap.
+Bliv hun kun ikke saa bleg om Næsen!
+Det Barske, det ligger kun saa i mit Væsen;
+Mit Hjerte er ømt, derpaa kan hun lide,
+Og jeg vil af intet Favnetag vide,
+Uden jeg mærker først, at hun
+Elsker mig ret af Hjertens Grund.
+</pre>
+		<div class="center">Gro.</div>
+		<pre class="center-box mb">Splittergal jeg maatte være,
+Førend jeg fik Thusser kære;
+Ikke selv den værste Skiøge
+Vilde Seng med Jetter søge!
+Hils dig selv, og hils din Broder:
+Thusse-Brud, og Trolde-Moder
+Være Hexe, ikke jeg!
+Andre efterhige knap
+Mødding-Kys, og Tjørne-Klap,
+Hvile vist ei Silke-Kind
+Paa et børstet Svine-Skind!
+Hvor Naturen sig oprører,
+Nødig man om Elskov hører,
+Og det skal vist aldrig feile:
+Piger lee, naar Tosser beile.
+</pre>
+
+		<div class="center">Gram.</div>
+		<pre class="center-box mb">Betænk dog, Barn! jeg er berømt i Krig,
+For Tapperhed, og jeg tilbunds er riig.
+Min Haand har bøiet mangen Nakke stiv,
+Og stærke Konger skilt ved Land og Liv.
+Her er en Guldring, see hvor den kan gloe!
+Giv hun mig nu sit Hjerte og sin Troe!
+Saa skal den Ring os fæste evig sammen,
+Vort Bryllup holde vi med Fryd og Gammen,
+Og leve saa, som Blommen i et Æg!
+</pre>
+		<p>Med det Samme han sagde disse Ord, skiød Skielmen sin Jette-Ham, og stod for Jomfruen, som den deiligste Karl hun vilde fæste Øine paa. Var hun bange før, da blev hun dristig nu, thi nu tog hun med begge Hænder imod Fæstens-Gaven, og
+			lod sig baade kysse og klappe for et godt Ord.</p>
+
+		<p>Der Gram nu drog videre, mødte ham to Skov-Røvere, som laae paa Luur ved Landeveien, og de vare saa gridske paa Byttet, at de, uden at see sig for, foer ind paa ham, som glubende Ulve, men han saae sit Snit, og slog dem, som to
+			Fluer, med eet Smæk. Nu kan man sagtens vide, det var ikke for Svenskernes, men for sin egen Skyld, han gav de to Stimænd deres Livsbrød , men hvor høit han elskede Svensken, og hvor bange han var for at giøre sine Fiender en
+			Tjeneste, det beviiste han paa en mærkværdig Maade, ved det, at han reiste de døde Kroppe op til et Træ, saa det kunde livagtig lade som de stode der lysvaagne endda. Det var da hans Agt, at de, som ikke længer kunde slaae til, skulde
+			i det Mindste true, og, som et Slags Giengangere, kyse Livet af Svenskerne, saa Veien omtrent blev lige farlig. I Øvrigt, saa, da han havde hørt af Spaamændene, at “Intet uden Guldets Magt, Sigtrygs Liv var underlagt” saa fandt han
+			paa, at lade sin Kiølle beslaae med Guld, og paa den Maade lykkedes det ham, da de kom hinanden under Øine, at slaae Kong Sigtryg ihjel. Om denne Helte-Gierning skal Besse have gjort en ganske kiøn Kæmpe-Vise, der lyder omtrent som
+			saa:</p>
+		<pre class="center-box mt">Det var Kong Gram hin haarde,
+Alt med sin Kiølle god,
+Han uden Skjold og Kaarde,
+Gik Svenskeren imod;
+Den Kiølle kom for Orde,
+I Kamp Beskeed den gjorde,
+Som baade Sværd og Skjold!
+</pre>
+
+		<pre class="center-box mt">Med Himlen sig beraadte
+Den Danne-Konning flink,
+Og den Forstand han aatte,
+At følge Skiebnens Vink;
+Kong Sigtryg sank for Guldet,
+Og med ham sank i Muldet,
+Al Sverrigs Lyst og Glands!
+</pre>
+		<pre class="center-box mt">Det Krigspuds, vil jeg sige,
+Fortjener vel en Sang,
+Det kalder man at krige
+Med Klem, med Glands og Klang;
+Ja, kastet over Ende,
+Maa Svensken selv bekiende:
+Det var et deiligt Slag!
+</pre>
+
+		<pre class="center-box mt">Naar Sværdet ei vil bide,
+Og Jernet er forbudt,
+Da skal med Guld man stride,
+Saa vorder Fjenden skudt,
+Og kan sig ei beklage;
+Han faldt i gyldne Dage,
+Og fik en ædel Død!
+</pre>
+		<pre class="center-box mt mb">Herefter skal man hædre
+End meer det røde Guld,
+Thi aldrig før det bedre
+Har blinket over Muld;
+Naar man det høiest priser,
+Det kaldes skal i Viser:
+Dan-Kongens Kiølle-Glands!
+</pre>
+
+		<p>Der nu Gram havde faaet Kong Sigtryg ryddet af Veien, havde han nok Lyst til at beholde Sverrig, og, da han mistænkde Svarin, Høvdingen i Gylland, for at have Øie paa Thronen, saa bød han ham ud, og nedlagde ham i Tvekamp. Dermed var
+			imidlertid Sagen ingenlunde afgjort, thi nu kom alle Svarins sexten Brødre, hvoraf de syv vare ægte, og vilde hevne Skade, og det var en haard Dyst for Gram, men han fik dog gjort Kaal paa hele Klatten.</p>
+
+		<p>Samme Lykke som disse havde ogsaa Ring, en Siællandsfar af høi Herkomst, som gjorde Oprør, og stræbde at faae hele det danske Folk i Ledtog med sig. Sagen var den, at da Kong Skiold blev ældgammel, syndes han det var baade bedre og
+			mageligere, at dele Krone-Byrden med sin Arving, end nu, da han gik paa Gravsens Bred, at ville udmatte sig, ved at bære den ene. Derfor tog han Gram til sin Medhjelp, og det tog
+			Ring fortrydeligt op, thi han syndes vel, at den Ene var for grøn om Hagen, og den Anden for graa, til at giøre Ære af, meende i al Fald, at den Ene var for ung og den Anden for gammel, til at giøre ham Modstand, og sagde reent ud til
+			Folket, at Ingen af dem duede til at være Konge, da den Ene var et Barn, og den Anden gik i Barndom. Ring havde imidlertid regnet feil, thi Kongerne stode sig, og han gik til Grunde, og heraf kan man lære, at Mod og Manddom er ikke
+			bundet til Aars-Tal.</p>
+
+		<p>Blandt Grams øvrige Bedrifter, som ei vare faa, maae vi endnu lægge Mærke til de Omstændigheder, han havde med Kong Sumle i Fyen] Finland eller Fyen Rettelsesliste. Først, da de laae i Krig med hinanden, fik Gram et godt Øie til hans
+			Daatter, Signe, ombyttede Sværdet med den røde Mandelstok, beilede, og fik Ja, paa det Vilkaar, at han skulde forskyde sin forrige Dronning; men imidlertid havde den norske Kong Svip-Dag voldtaget baade hans Syster og hans Daatter, og
+			imens han nu af alle Kræfter stræbde at hævne den Beskiemmelse, gik Sumle hen og fæstede sin Daatter til Kong Henrik i Saxen. Aldrig saasnart fik Gram den Tidende at spørge, førend han i al Stilhed skyndte sig fra Leiren over til
+			Fyen, og heraf seer man, at naar det kom til Stykket, holdt han dog meer af Pigen, end af Krigen. Han kom netop til Bryllup, men han var reven og pjaltet klædt, og satte sig paa Dør-Tærskelen, som en selvbuden Giæst. Da man nu spurgde
+			ham, hvad Godt han havde at føre, svarede han, at han havde ingen Ting hos sig, uden den Kunst at helbrede Folk, og siden, da alle Giæsterne havde faaet en Taar over Tørsten, og vare dygtig høirøstede over Borde, laande han Bruden et
+			Par Øine, og gav sin Vrede Luft i en Vise, hvori han heller hverken glemde at rose sig selv, eller at skiælde og smælde paa vægelsindede Piger. Visen skal gierne have lydt saalunde:</p>
+
+
+		<pre class="center-box mt">Otte, dem stak jeg paa Spid,
+Ene om Værket, med Gammen,
+Ni jeg i samme god Tid
+Huggede sønder og sammen.
+En Kiærling er en Kiærling, og en Mand en Mand!</pre>
+		<pre class="center-box mt">Svarin stak Næsen i Skye,
+Laved' sig kongeligt Sæde,
+Bar dog kun Kronen i Nye,
+Tabde sit Hoved i Næde!
+En Kiærling er en Kiærling, og en Mand en Mand!</pre>
+		<pre class="center-box mt">Dybt haver drukket mit Sværd
+Blod af saa mangen en Bolle,
+Rødmusset blev det af hver,
+Bollerne blegnede kolde!
+En Kiærling er en Kiærling, og en Mand en Mand!</pre>
+		<pre class="center-box mt">Sværde maae synge for Liig,
+Hjelme, som Stjerneskud, segne;
+Ingen skal sige om mig,
+Han saae mig bæve, og blegne!
+En Kiærling er en Kiærling, og en Mand en Mand!</pre>
+		<pre class="center-box mt">Mig haver Signe forskudt!
+Mig har en Pigelil saaret!
+Ære og Troe har hun brudt,
+Fremmede Ungersvend kaaret!
+En Kiærling er en Kiærling, og en Mand en Mand!</pre>
+
+		<pre class="center-box mt">Saa giør de Piger os Haad,
+Møe tager Kæmpe ved Næse,
+Flygtige, løse paa Traad,
+Vendes, som Vindene blæse!
+En Kiærling er en Kiærling, og en Mand en Mand!</pre>
+		<pre class="center-box mt mb">Alt som paa Hjul og paa Vind,
+Saa er paa Piger at bygge,
+Hvem er saa trofast i Sind,
+At ei med Nye kommer Nykke!
+En Kiærling er en Kiærling, og en Mand en Mand!</pre>
+		<p>Med det Samme Visen var ude, fløi Gram op af Sædet, og slog Hovedet af Hendrik, som han sad i Vennelag, over Borde, slog ned af Giæsterne for Fode, snappede sin Fæstemøe fra Brude-Kvinderne, og seilede sin Vei. Saaledes kom da
+			Bryllups-Giæsterne til Liig-Begiængelse, og det var en Lærestreg til Fyenboerne] Finlænderne eller Fyenboerne Rettelsesliste, saa de ikke herefter skulde lystes ved at gaae imellem Bark og Træe.</p>
+
+		<p>Det blev imidlertid Gram en dyr Reise den samme, thi da han siden vilde have sin Krig frem mod den norske Kong Svip-Dag, kom Saxerne denne til hjælp med en stor Hob Folk, ikke fordi de havde ham saa kiær, men for at hevne Kong
+			Hendriks Død, og Gram maatte bide i Græsset.</p>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>
+
+	<section class="chapter">
+		<h2>kaptiel.</h2>
+	</section>v
+
+	<section class="chapter">
+		<h2>Chapter I.</h2>
+		<p>test</p>
+	</section>
+</body>
