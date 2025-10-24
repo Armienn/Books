@@ -22,6 +22,8 @@ for (const element of [...$0.getElementsByClassName("firstIndent"), ...$0.getEle
   element.innerHTML = "¤p|(" + element.innerHTML + "¤p|)"
 for (const element of $0.getElementsByTagName("table"))
   element.innerHTML = "¤pre|(" + element.innerHTML + "¤pre|)"
+for (const element of $0.getElementsByClassName("l_noIndent"))
+  element.innerHTML = element.innerHTML + "¤"
 for (const element of $0.getElementsByClassName("l_firstIndent"))
   element.innerHTML = element.innerHTML + "¤"
 for (const element of $0.getElementsByClassName("l_secondIndent"))
