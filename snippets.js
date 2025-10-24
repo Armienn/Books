@@ -24,6 +24,10 @@ for (const element of $0.getElementsByTagName("table"))
   element.innerHTML = "¤pre(" + element.innerHTML + "¤pre)"
 for (const element of $0.getElementsByClassName("l_firstIndent"))
   element.innerHTML = element.innerHTML + "¤"
+for (const element of $0.getElementsByClassName("l_secondIndent"))
+  element.innerHTML = "¤|" + element.innerHTML + "¤"
+for (const element of $0.getElementsByClassName("l_refrain"))
+  element.innerHTML = element.innerHTML + "¤"
 for (const element of $0.getElementsByClassName("center"))
   element.innerHTML = "¤div(" + element.innerHTML + "¤div)"
 var tekst = $0.textContent
@@ -34,5 +38,6 @@ console.log(tekst
   .split("¤pre)").join("</pre>")
   .split("¤div(").join("<div>")
   .split("¤div)").join("</div>")
+  .split("¤|").join("\t")
   .split("¤").join("\n")
 )
