@@ -7,6 +7,7 @@ do {
     ...$0.getElementsByClassName("segStart"),
     ...$0.getElementsByClassName("segEnd"),
     ...$0.getElementsByClassName("lgNumber"),
+    ...$0.getElementsByClassName("appInvisible"),
   ]
   for (const element of metaElements)
     element.remove()
