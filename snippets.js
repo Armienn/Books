@@ -32,6 +32,8 @@ for (const element of $0.getElementsByClassName("l_refrain"))
   element.innerHTML = element.innerHTML + "¤"
 for (const element of $0.getElementsByClassName("italic"))
   element.innerHTML = "¤em|(" + element.innerHTML + "¤em|)"
+for (const element of $0.getElementsByClassName("bold"))
+  element.innerHTML = "¤em|(" + element.innerHTML + "¤em|)"
 for (const element of $0.getElementsByClassName("center"))
   element.innerHTML = "¤div|(" + element.innerHTML + "¤div|)"
 var tekst = $0.textContent
@@ -46,4 +48,5 @@ console.log(tekst
   .split("¤em|)").join("</em>")
   .split("¤|").join("\t")
   .split("¤").join("\n")
+  .split("\n\n").join("\n")
 )

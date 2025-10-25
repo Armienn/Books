@@ -54,8 +54,23 @@ html {
 }
 
 @font-face {
+	font-family: "EB Garamond Medium";
+	src: url(fonts/EB-Garamond/EBGaramond-Medium.otf);
+}
+
+@font-face {
+	font-family: "EB Garamond Semi Bold";
+	src: url(fonts/EB-Garamond/EBGaramond-SemiBold.otf);
+}
+
+@font-face {
 	font-family: "EB Garamond Bold";
 	src: url(fonts/EB-Garamond/EBGaramond-Bold.otf);
+}
+
+@font-face {
+	font-family: "EB Garamond Extra Bold";
+	src: url(fonts/EB-Garamond/EBGaramond-ExtraBold.otf);
 }
 
 @font-face {
@@ -178,6 +193,13 @@ p {
 
 pre {
 	white-space: pre-wrap;
+
+	hr {
+		border-bottom: 1pt solid;
+		width: 3cm;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .chapter {
