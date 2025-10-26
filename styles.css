@@ -1,10 +1,13 @@
 html {
 	--font-regular: "EB Garamond", serif;
+	--font-medium: "EB Garamond Medium", serif;
+	--font-semi-bold: "EB Garamond Semi Bold", serif;
 	--font-bold: "EB Garamond Bold", serif;
+	--font-extra-bold: "EB Garamond Extra Bold", serif;
 	--font-italic: "EB Garamond Italic", serif;
 
-	--title-font-size: 24pt;
-	--title-line-height: 30pt;
+	--title-font-size: 36pt;
+	--title-line-height: 45pt;
 
 	--chapter-margin-top: 45pt;
 	--chapter-font-size: 20pt;
@@ -139,11 +142,11 @@ section {
 }
 
 h1 {
-	font: normal var(--title-font-size) var(--font-bold);
+	font: normal var(--title-font-size) var(--font-semi-bold);
 	line-height: var(--title-line-height);
 	text-align: center;
-	white-space: pre-wrap;
-	padding-bottom: 15pt;
+	padding-top: 30pt;
+	white-space: pre-line;
 }
 
 h2 {
@@ -152,6 +155,7 @@ h2 {
 	line-height: var(--chapter-line-height);
 	padding-top: var(--chapter-margin-top);
 	padding-bottom: var(--chapter-margin-bottom);
+	white-space: pre-line;
 }
 
 h3 {
@@ -195,11 +199,27 @@ pre {
 	white-space: pre-wrap;
 
 	hr {
-		border-bottom: 1pt solid;
+		border-bottom: 1pt solid black;
 		width: 3cm;
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
+
+.titlepage hr {
+	border-bottom: 3pt double black;
+	width: 5cm;
+	margin: 15pt auto;
+}
+
+.author {
+	text-align: center;
+	font-size: 15pt;
+	font-family: var(--font-medium);
+}
+
+.translator {
+	text-align: center;
 }
 
 .chapter {
