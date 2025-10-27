@@ -145,7 +145,6 @@ h1 {
 	font: normal var(--title-font-size) var(--font-semi-bold);
 	line-height: var(--title-line-height);
 	text-align: center;
-	padding-top: 30pt;
 	white-space: pre-line;
 }
 
@@ -183,7 +182,7 @@ hgroup {
 		bottom: var(--sub-header-margin-bottom);
 	}
 
-	h2+p {
+	h1+p, h2+p {
 		top: var(--sub-header-margin-top);
 		bottom: 0;
 	}
@@ -206,10 +205,26 @@ pre {
 	}
 }
 
-.titlepage hr {
-	border-bottom: 3pt double black;
-	width: 5cm;
-	margin: 15pt auto;
+.titlepage {
+	padding-top: 30pt;
+
+	hr {
+		border-bottom: 3pt double black;
+		width: 5cm;
+		margin: 15pt auto;
+	}
+
+	hgroup {
+		p {
+			font-size: 15pt;
+			bottom: 15pt;
+		}
+
+		h1+p, h2+p {
+			top: 15pt;
+			bottom: 0;
+		}
+	}
 }
 
 .author {

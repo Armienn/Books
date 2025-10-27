@@ -50,3 +50,12 @@ console.log(tekst
   .split("¤").join("\n")
   .split("\n\n").join("\n")
 )
+
+
+// contents
+
+var titles = [...document.getElementsByTagName("h2")].map(x => x.textContent)
+console.log(titles
+  .map((x, i) => `<a href="#chapter-${i+1}"><div>${x}</div><div>${i*10+5}</div></a>`)
+  .join("\n")
+)
