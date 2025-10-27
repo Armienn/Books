@@ -310,6 +310,7 @@ hr {
 
 .dedication {
 	page: no-header;
+	padding-top: calc(var(--korpus-line-height) * 14);
 }
 
 .contents {
