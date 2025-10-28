@@ -139,6 +139,8 @@ pre {
 
 section {
 	break-after: page;
+	widows: 1;
+	orphans: 1;
 }
 
 h1 {
